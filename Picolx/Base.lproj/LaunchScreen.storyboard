@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="AGO-pl-DRt">
+    <device id="retina5_9" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="m88-Nw-YVw">
+            <objects>
+                <viewController id="AGO-pl-DRt" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="pbt-KS-zKQ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b64-pT-rdl">
+                                <rect key="frame" x="121" y="380" width="133" height="52"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="Pic">
+                                        <attributes>
+                                            <color key="NSColor" red="0.14901960784313725" green="0.14901960784313725" blue="0.14901960784313725" alpha="1" colorSpace="calibratedRGB"/>
+                                            <font key="NSFont" size="45" name="Helvetica-Bold"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="olx">
+                                        <attributes>
+                                            <color key="NSColor" red="0.60784313725490191" green="1" blue="0.63137254901960782" alpha="1" colorSpace="calibratedRGB"/>
+                                            <font key="NSFont" size="45" name="Helvetica-Bold"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="upper" translatesAutoresizingMaskIntoConstraints="NO" id="UAU-Jp-ZEz">
+                                <rect key="frame" x="-92" y="-87" width="374" height="374"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="373.99999999999977" id="jig-oZ-buS"/>
+                                    <constraint firstAttribute="width" constant="374" id="n8p-nO-dKS"/>
+                                </constraints>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="lower" translatesAutoresizingMaskIntoConstraints="NO" id="oP3-sj-wQH">
+                                <rect key="frame" x="96" y="536" width="374" height="374"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="374" id="aHg-4G-Skm"/>
+                                    <constraint firstAttribute="height" constant="374" id="tQw-1x-27g"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="b64-pT-rdl" firstAttribute="centerX" secondItem="pbt-KS-zKQ" secondAttribute="centerX" id="15S-HC-7XS"/>
+                            <constraint firstAttribute="bottom" secondItem="oP3-sj-wQH" secondAttribute="bottom" constant="-98" id="5vf-vY-QvQ"/>
+                            <constraint firstItem="b64-pT-rdl" firstAttribute="centerY" secondItem="pbt-KS-zKQ" secondAttribute="centerY" id="ai0-yz-AxS"/>
+                            <constraint firstAttribute="trailing" secondItem="oP3-sj-wQH" secondAttribute="trailing" constant="-95" id="h1V-zR-zJ0"/>
+                            <constraint firstItem="UAU-Jp-ZEz" firstAttribute="top" secondItem="pbt-KS-zKQ" secondAttribute="top" constant="-87" id="ht3-tN-paU"/>
+                            <constraint firstItem="UAU-Jp-ZEz" firstAttribute="leading" secondItem="pbt-KS-zKQ" secondAttribute="leading" constant="-92" id="yyq-0w-oDj"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="82e-3n-aEr"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nJI-aK-7Z8" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1715.9420289855075" y="120.53571428571428"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="lower" width="940" height="788"/>
+        <image name="upper" width="940" height="788"/>
+    </resources>
+</document>
